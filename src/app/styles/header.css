@@ -1,0 +1,38 @@
+#container{ 
+    background-color: rgba(0, 0, 0, 0.75);
+   z-index: 2;
+}
+.logoImage {
+    opacity: 1;
+    width: 7%;
+}
+.nav-section {
+    padding-top: 10px;
+}
+
+.navText {
+    color: #E5BC79;
+    text-transform: uppercase;
+    font-family: 'Gotham-Light';
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    line-height: 1;
+    display: inline-block;
+    transform: scalex(1.2);
+}
+.nav-btn{
+    margin-left: 2%;
+    border: 1px solid #E5BC79;
+    color: #E5BC79;
+    text-transform: uppercase;
+    font-family: 'Gotham-Light';
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    line-height: 1;
+    display: inline-block;
+    transform: scalex(1.2);
+    margin-top: -10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
