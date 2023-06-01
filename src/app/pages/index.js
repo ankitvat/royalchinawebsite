@@ -5,7 +5,7 @@ import { Header } from '../components/Header'
 import '../styles/index.css';
 import Image from 'next/image';
 import bg from '../../../assets/bg.png';
-import heroLogo from '../../../assets/heroLogo.png';
+import heroLogo from '../../../assets/herologo.png';
 import aboutUs from '../../../assets/aboutus.svg';
 import images from '../../../assets/images2.png';
 import ReactDatePicker from 'react-datepicker';
