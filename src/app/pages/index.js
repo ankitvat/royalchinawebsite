@@ -1,25 +1,58 @@
 'use client'
 
-import React from 'react'
+import React, { Fragment, useEffect } from 'react'
 import { Header } from '../components/Header'
 import '../styles/index.css';
 import Image from 'next/image';
 import bg from '../../../assets/bg.png';
 import heroLogo from '../../../assets/heroLogo.png';
+import aboutUs from '../../../assets/aboutus.svg';
+import images from '../../../assets/images2.png';
 import ReactDatePicker from 'react-datepicker';
+import jhaalar from '../../../assets/jhaalar.png';
+import awards from '../../../assets/awards.png';
 export const Index = () => {
   const [selectedDate, setSelectedDate] = React.useState(new Date());
   const [selectedTime , setSelectedTime] = React.useState('');
+  const [os , setOs] = React.useState('');
 
   const handleDateChange = (event) => {
     setSelectedDate(event.target.value);
   };
 
+
+  function osfunction ()
+{
+    let os = navigator.userAgent;
+    let finalOs="";
+    if (os.search('Windows')!==-1){
+        finalOs="Windows";
+    }
+    else if (os.search('Mac')!==-1){
+        finalOs="MacOS";
+    }
+    else if (os.search('X11')!==-1 && !(os.search('Linux')!==-1)){
+        finalOs="UNIX";
+    }
+    else if (os.search('Linux')!==-1 && os.search('X11')!==-1){
+        finalOs="Linux"
+    }
+    
+    return finalOs;
+
+}
+
+useEffect (() => {
+  const res = osfunction();
+  setOs(res);
+
+},[]);
   const handleTimeChange = (event) => {
     setSelectedTime(event.target.value);
   };
 
   return (
+    <Fragment>
     <div className='layout'>
                <Header />
                <div className='heroSection'>
@@ -35,7 +68,7 @@ export const Index = () => {
               
             <div className='flex flex-row justify-between items-center h-10 px-4 left-box'>
               <h1 className = "date-text">select date </h1>
-           <ReactDatePicker selected={selectedDate} onChange={(date) => setSelectedDate(date)} />
+           {/* <ReactDatePicker selected={selectedDate} onChange={(date) => setSelectedDate(date)} /> */}
             </div>
             <div className='flex flex-row items-center h-10 px-4 right-box'>
             <h1 className = "date-text">time</h1>
@@ -48,11 +81,50 @@ export const Index = () => {
         /> */}
             </div>
                </div>
+               
                </div>
-             
+              
         <div className='overlay' />
+      
         <Image src = {bg} alt="background Image" className='backgroundImage' />
+       
+        <div className='flex flex-row w-full skipContainer'>
+        <h1 className='hero-text mx-auto skipText'>Skip to see menu</h1>
+        </div>
 
     </div>
+    <section className='about-us'>
+        <Image src={aboutUs} alt='about-us' className='aboutUsImg' />
+          <div className='flex flex-col w-1/2 aboutUsInner'>
+            <h1 className='aboutUsHeader'>about us</h1>
+            <h2 className='aboutUsText'>Royal China'
+             is all about Chinese regal dining serving 
+             a range of Chinese cuisines and beverages.
+              Combining the essence and perfect taste of Chinese Cuisine, 
+              we aim to educate and promote. The Gastronomy of Chinese food and culture.
+               The Restaurant is located in Nehru place (Eros Towers) South Delhi. 
+               State-of-the-art interior, chic dining and ambience with amazing view of Delhi
+                from the 16th floor will transport our guests into a state of comfort and bliss.
+</h2>
+       
+          <div className='explore-btn w-40 h-10' style = {{paddingTop: os === 'MacOS' ? '1%' : 0}}>
+            <h1 className='explore-text'>explore</h1>
+         
+          </div>
+          </div>
+    </section>
+    <Image src = {images} alt ='images' className='imagesGallery' />
+    <section className='jhaalarContainer'>
+    <Image src = {jhaalar} alt="jhaalar" className='jhaalar' />
+    <h1 className='white-text'>
+    A timeless symphony of bold colors, Chinese values, and striking prints reimagined forms the backbone of this high-quality Cantonese food restaurant, Royal China.
+    </h1>
+    </section>
+    <Image src = {awards} alt= "awards" className='imagesGallery' />
+    <section className='fine-dine-section'>
+        
+    </section>
+   
+    </Fragment>
   )
 }
