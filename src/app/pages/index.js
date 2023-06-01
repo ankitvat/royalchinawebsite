@@ -99,7 +99,7 @@ useEffect (() => {
         <Image src={aboutUs} alt='about-us' className='aboutUsImg' />
           <div className='flex flex-col w-1/2 aboutUsInner'>
             <h1 className='aboutUsHeader'>about us</h1>
-            <h2 className='aboutUsText'>Royal China'
+            <h2 className='aboutUsText'>Royal China
              is all about Chinese regal dining serving 
              a range of Chinese cuisines and beverages.
               Combining the essence and perfect taste of Chinese Cuisine, 
