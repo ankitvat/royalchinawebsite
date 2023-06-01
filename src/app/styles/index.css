@@ -98,20 +98,23 @@ input[type=date]:focus::-webkit-datetime-edit {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
+    padding-left: 4%;
   }
   .aboutUsImg {
     height:70vh;
   }
   .aboutUsInner {
-    align-items: center;
+    align-items: flex-start;
     padding-top: 5%;
     height: 70vh;
+    padding-left: 5%;
     justify-content: flex-start;
   }
   .aboutUsHeader {
     color: #E5BC79;
     text-transform: uppercase;
     font-family: 'Gotham-Book';
+    margin-left: 3rem;
     font-size:6.2em;
     letter-spacing: 1px;
     line-height: 1;
@@ -120,7 +123,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .aboutUsText {
     color: #E5BC79;
-  
+
     font-family: 'Gotham-Light';
     font-size: 1.4em;
     width: 80%;
@@ -139,7 +142,7 @@ input[type=date]:focus::-webkit-datetime-edit {
     border : 2px solid #E5BC79;
     margin-top: 10%;
     transition: 2s ease;
-    margin-left: -60%;
+  
     
   }
 
@@ -183,14 +186,86 @@ input[type=date]:focus::-webkit-datetime-edit {
     align-items: center;
   }
   .fine-dine-section {
-    height:100vh;
+    height:200vh;
     width:100%;
-    margin-top: 10%;
     display: flex;
     background-image: url('../../../assets/finebg.png');
     background-repeat: no-repeat;
     background-size: 100vh;
     background-color: black;
-    background-position: center;
+    background-position-x: center;
+    background-position-y:-20vh;
+    flex-direction: column;
+    align-items: center;
   
+  }
+
+  .lota {
+
+    width: 5%;
+  }
+  .food {
+    height: 80vh;
+    width: 80%;
+    margin-top: 10%;
+  }
+  .foodImg {
+    width: 50%;
+  }
+  .foodText {
+    width:50%;
+    line-height: 2;
+    margin-left: 10%;
+  }
+  .location-box {
+    width: 80%;
+    height: 70vh;
+    border:2px solid #E5BC79;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .location-box {
+    width: 80%;
+    height: 80vh;
+    border:2px solid #E5BC79;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .location {
+    width: 98%;
+    height: 95%;
+    border:2px solid #E5BC79;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+  }
+  .location-left {
+    width:45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 5%;
+    padding-left: 5%;
+  }
+  .location-right {
+    width:45%;
+    height: 90%;
+    background-color: #A91C1D;
+  }
+
+  .location-header {
+    color: #E5BC79;
+
+    font-family: 'Gotham-Book';
+    font-size:4.2em;
+    letter-spacing: 1px;
+    line-height: 1;
+    display: inline-block;
+    transform: scalex(1.2);
   }

@@ -11,6 +11,8 @@ import images from '../../../assets/images2.png';
 import ReactDatePicker from 'react-datepicker';
 import jhaalar from '../../../assets/jhaalar.png';
 import awards from '../../../assets/awards.png';
+import lota from '../../../assets/lota.png';
+import food from '../../../assets/food.png';
 export const Index = () => {
   const [selectedDate, setSelectedDate] = React.useState(new Date());
   const [selectedTime , setSelectedTime] = React.useState('');
@@ -121,8 +123,35 @@ useEffect (() => {
     </h1>
     </section>
     <Image src = {awards} alt= "awards" className='imagesGallery' />
+    <div style = {{height: '14vh' , backgroundColor:'black'}}/>
     <section className='fine-dine-section'>
-        
+        <div style = {{
+          display:'flex',
+          alignItems:'center',
+          justifyContent:'center',
+          width:'100%',
+          height:'15%',
+          position: 'relative',
+        }}>
+          <Image src = {lota} alt ="lota" className= 'lota' />
+          <h1 className = "white-text" style = {{zIndex:20 , position:'absolute' , bottom:'28%' , right:'22%'}}>A fine dining chinese restaurant & bar.</h1>
+        </div>
+        <div className='flex flex-row items-center food'>
+          <Image src ={food} alt ="food" className="foodImg" />
+          <h1 className ="hero-text foodText">
+          From our famous chili oil to being the first to start authentic dimsums in Delhi that now range to more than 50 fillings and cater to all food pallets.
+
+          </h1>
+        </div>
+        <div className='location-box'>
+          <div className='location'>
+          <div className='location-left'>
+          <h1 className='location-header'>Locate Us</h1>
+          <h1 className="locationText"></h1>
+          </div>
+          <div className = "location-right"> </div>
+          </div>
+        </div>
     </section>
    
     </Fragment>
