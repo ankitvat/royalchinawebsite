@@ -98,8 +98,8 @@ useEffect (() => {
     <section className='about-us'>
         <Image src={aboutUs} alt='about-us' className='aboutUsImg' />
           <div className='flex flex-col w-1/2 aboutUsInner'>
-            <h1 className='aboutUsHeader'>about us</h1>
-            <h2 className='aboutUsText'>Royal China
+            <h1 className='aboutUsHeader text-6xl mx-10'>about us</h1>
+            <h2 className='aboutUsText text-xl'>Royal China
              is all about Chinese regal dining serving 
              a range of Chinese cuisines and beverages.
               Combining the essence and perfect taste of Chinese Cuisine, 
@@ -118,7 +118,7 @@ useEffect (() => {
     <Image src = {images} alt ='images' className='imagesGallery' />
     <section className='jhaalarContainer'>
     <Image src = {jhaalar} alt="jhaalar" className='jhaalar' />
-    <h1 className='white-text'>
+    <h1 className='white-text text-4xl'>
     A timeless symphony of bold colors, Chinese values, and striking prints reimagined forms the backbone of this high-quality Cantonese food restaurant, Royal China.
     </h1>
     </section>
@@ -134,7 +134,7 @@ useEffect (() => {
           position: 'relative',
         }}>
           <Image src = {lota} alt ="lota" className= 'lota' />
-          <h1 className = "white-text" style = {{zIndex:20 , position:'absolute' , bottom:'28%' , right:'22%'}}>A fine dining chinese restaurant & bar.</h1>
+          <h1 className = "white-text1 text-3xl">A fine dining chinese restaurant & bar.</h1>
         </div>
         <div className='flex flex-row items-center food'>
           <Image src ={food} alt ="food" className="foodImg" />

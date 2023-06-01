@@ -114,7 +114,7 @@ input[type=date]:focus::-webkit-datetime-edit {
     color: #E5BC79;
     text-transform: uppercase;
     font-family: 'Gotham-Book';
-    margin-left: 3rem;
+   
     font-size:6.2em;
     letter-spacing: 1px;
     line-height: 1;
@@ -125,7 +125,7 @@ input[type=date]:focus::-webkit-datetime-edit {
     color: #E5BC79;
 
     font-family: 'Gotham-Light';
-    font-size: 1.4em;
+    
     width: 80%;
     margin-top: 5%;
     line-height: 1.4;
@@ -167,7 +167,6 @@ input[type=date]:focus::-webkit-datetime-edit {
     color:white;
     text-transform: uppercase;
     font-family: 'Gotham-Book';
-    font-size: 2.28em;
     letter-spacing: 1px;
     line-height: 1.4;
     display: inline-block;
@@ -185,6 +184,14 @@ input[type=date]:focus::-webkit-datetime-edit {
     flex-direction: column;
     align-items: center;
   }
+  .white-text1 {
+    color:white;
+    text-transform: uppercase;
+    font-family: 'Gotham-Book';
+    letter-spacing: 1px;
+    line-height: 1.4;
+    transform: scalex(1.2);
+  }
   .fine-dine-section {
     height:200vh;
     width:100%;
@@ -201,7 +208,8 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
 
   .lota {
-
+    position: absolute;
+    top: 8%;
     width: 5%;
   }
   .food {
@@ -260,6 +268,16 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
 
   .location-header {
+    color: #E5BC79;
+
+    font-family: 'Gotham-Book';
+    font-size:4.2em;
+    letter-spacing: 1px;
+    line-height: 1;
+    display: inline-block;
+    transform: scalex(1.2);
+  }
+  .locationText {
     color: #E5BC79;
 
     font-family: 'Gotham-Book';
