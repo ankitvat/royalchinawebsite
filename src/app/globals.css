@@ -2,35 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-
-}
 
 @font-face {
   font-family: "Gotham-Light";
-  src: url("../../Gotham/GothamLight.ttf");
+  src: url("../../Gotham/GothamLight.woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham-Medium";
-  src: url("../../Gotham/GothamMedium.ttf");
+  src: url("../../Gotham/GothamMedium.woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham-Bold";
-  src: url("../../Gotham/GothamBold.ttf");
+  src: url("../../Gotham/GothamBold.woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gotham-Book";
-  src: url("../../Gotham/GothamBook.ttf");
+  src: url("../../Gotham/GothamBook.woff2");
   font-weight: normal;
   font-weight: normal;
 }

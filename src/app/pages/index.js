@@ -13,6 +13,7 @@ import jhaalar from '../../../assets/jhaalar.png';
 import awards from '../../../assets/awards.png';
 import lota from '../../../assets/lota.png';
 import food from '../../../assets/food.png';
+import Footer from '../components/Footer';
 export const Index = () => {
   const [selectedDate, setSelectedDate] = React.useState(new Date());
   const [selectedTime , setSelectedTime] = React.useState('');
@@ -21,6 +22,14 @@ export const Index = () => {
   const handleDateChange = (event) => {
     setSelectedDate(event.target.value);
   };
+
+  const goToTop = () => {
+
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    })
+};
 
 
   function osfunction ()
@@ -54,6 +63,7 @@ useEffect (() => {
   };
 
   return (
+
     <Fragment>
     <div className='layout'>
                <Header />
@@ -109,8 +119,8 @@ useEffect (() => {
                 from the 16th floor will transport our guests into a state of comfort and bliss.
 </h2>
        
-          <div className='explore-btn w-40 h-10' style = {{paddingTop: os === 'MacOS' ? '1%' : 0}}>
-            <h1 className='explore-text'>explore</h1>
+          <div className='explore-btn w-40 h-10'>
+            <h1 className='explore-text text-base'>explore</h1>
          
           </div>
           </div>
@@ -145,15 +155,37 @@ useEffect (() => {
         </div>
         <div className='location-box'>
           <div className='location'>
-          <div className='location-left'>
-          <h1 className='location-header'>Locate Us</h1>
-          <h1 className="locationText"></h1>
+          <div className='location-left flex flex-col items-start justify-start px-10 py-20'>
+          <h1 className='location-header text-7xl'>Locate Us</h1>
+          <h1 className="locationText text-xl py-16">
+            LG03, The Chanakya Mall, <br />
+            Chanakyapuri, New Delhi, Delhi <br />
+            110021, India <br />
+            New Delhi <br />
+            0119020000
+
+          </h1>
+         
+          <div className = "flex flex-row items-center justify-center w-44 h-28 py-4 px-2 directionsBox">
+        
+            <span className='directionsText text-sm uppercase'>
+              Get directions
+            </span>
+         
           </div>
-          <div className = "location-right"> </div>
+          
+          </div>
+          <div className = "location-right">
+          <iframe  style = {{   width :"100%" ,height: "100%"  , border: 0}}src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.5160618231757!2d77.18816327621589!3d28.584291286268364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3cf69b24ac3%3A0xe2bcd9f8a25819c8!2sRoyal%20China!5e0!3m2!1sen!2sin!4v1686037107876!5m2!1sen!2sin" 
+ allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
           </div>
         </div>
     </section>
-   
+    <section className='w-full h-1/3 bg-black'/>
+    <Footer onPress={goToTop} />
+     
     </Fragment>
+   
+
   )
 }

@@ -12,7 +12,7 @@ export const Header = () => {
     <h1 className='navText text-sm'>the experience</h1>
     <h1 className='navText text-sm'>catering</h1>
     <h1 className='navText text-sm'>contact us</h1>
-    <h1 className='nav-btn text-sm'>order online</h1>
+    <h1 className='nav-btn text-sm px-2 py-2'>order online</h1>
    </nav>
    </div>
   )
