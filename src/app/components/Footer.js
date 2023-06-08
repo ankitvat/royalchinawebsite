@@ -22,7 +22,7 @@ const Footer = () => {
 
    
   return (
-    <div className=' flex items-center justify-center w-full h-1/2 container1'>
+    <div className=' flex items-center justify-center w-full h-auto pb-10 container1'>
         <div className='flex flex-col justify-start items-start inner-container'>
         <div className='flex flex-row justify-between items-center px-10 pt-20 py-10 w-full'>
             <h1 className='contact-us-header text-6xl uppercase'>contact us</h1>
@@ -48,10 +48,10 @@ Table Reservation - 011 69020000
                 </h1>
             </section>
             <section className ="flex h-full w-1/5  flex-col px-12 items-end justify-evenly">
-            <Image src ={fb} className='socials1 mr-1' alt="fb" />
-            <Image src ={ig} className='socials' alt="ig" />
-            <Image src ={tw} className='socials' alt="tw" />
-            <Image src ={yt} className='socials' alt="yt" />
+            <Image src ={fb} className=' w-4 h-8 mr-1' alt="fb" />
+            <Image src ={ig} className='w-6 h-6' alt="ig" />
+            <Image src ={tw} className='w-6 h-5' alt="tw" />
+            <Image src ={yt} className='w-7 h-5' alt="yt" />
             </section>
 
 </div>
