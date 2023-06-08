@@ -10,7 +10,15 @@ import ig from '../../../assets/ig.png'
 import tw from '../../../assets/tw.png'
 import yt from '../../../assets/yt.png'
 
-const Footer = ({onPress}) => {
+const Footer = () => {
+
+  const goToTop = () => {
+
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    })
+};
 
    
   return (
@@ -18,21 +26,21 @@ const Footer = ({onPress}) => {
         <div className='flex flex-col justify-start items-start inner-container'>
         <div className='flex flex-row justify-between items-center px-10 pt-20 py-10 w-full'>
             <h1 className='contact-us-header text-6xl uppercase'>contact us</h1>
-            <button className='flex items-center justify-end' onClick={onPress}>
+            <button className='flex items-center justify-end' onClick={goToTop}>
             <Image src ={up} alt="up-arrow" className='upArrow'  />
             </button>
            
         </div>
         <div className='w-full h-64 flex flex-row justify-start items-start mid-section'>
-            <section className ="flex h-full w-2/5 flex-col items-start pl-4 py-4">
-                <h1 className='text-xl location-title uppercase headers'>location</h1>
-                <h1 className=' text-base location-title mt-28'>LG03, The Chanakya Mall, Chanakyapuri, New <br />Delhi, Delhi, 110021, India.<br />
+            <section className ="flex h-full w-2/5 flex-col items-start pl-4 ">
+                <h1 className='text-xl location-title uppercase headers mt-8 '>location</h1>
+                <h1 className=' text-base location-title mt-24'>LG03, The Chanakya Mall, Chanakyapuri, New <br />Delhi, Delhi, 110021, India.<br />
 New Delhi
 01169020000</h1>
             </section>
-            <section className ="flex h-full w-2/5 flex-col pl-4 py-2">
-                <h1 className='text-xl location-title uppercase headers ml-7'>Contact us</h1>
-                <h1 className='text-base location-title mt-32 infoText'>
+            <section className ="flex h-full w-2/5 flex-col pl-4 ">
+                <h1 className='text-xl location-title uppercase headers ml-7 mt-8'>Contact us</h1>
+                <h1 className='text-base location-title mt-24 infoText'>
                 info@royalchinadelhi.com<br />
 Home Delivery - 011 49818000<br />
 

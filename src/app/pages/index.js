@@ -67,23 +67,22 @@ useEffect (() => {
     <Fragment>
     <div className='layout'>
                <Header />
-               <div className='heroSection'>
-                <div>
-                <Image src={heroLogo} alt="logo image" className='logoMain' />
-                </div>
-             
+               <div className=' w-full heroSection'>
+          
+                <Image src={heroLogo} alt="logo image" className='logoMain' priority={true} />
+              
                <div className='flex flex-row justify-around w-1/3 my-24'>
-                <h1 className='hero-text white'>reservation</h1>
-                <h1 className='hero-text'>delivery</h1>
+                <h1 className='hero-text text-xl white'>reservation</h1>
+                <h1 className='hero-text text-xl'>delivery</h1>
                </div>
                <div className='flex flex-row items-center w-2/3 dateTime'>
               
             <div className='flex flex-row justify-between items-center h-10 px-4 left-box'>
-              <h1 className = "date-text">select date </h1>
+              <h1 className = "date-text text-xs">select date </h1>
            {/* <ReactDatePicker selected={selectedDate} onChange={(date) => setSelectedDate(date)} /> */}
             </div>
             <div className='flex flex-row items-center h-10 px-4 right-box'>
-            <h1 className = "date-text">time</h1>
+            <h1 className = "date-text text-xs">time</h1>
             {/* <input
           type="time"
           id="timeInput"
@@ -98,10 +97,10 @@ useEffect (() => {
               
         <div className='overlay' />
       
-        <Image src = {bg} alt="background Image" className='backgroundImage' />
+        <Image src = {bg} alt="background Image" className='backgroundImage' priority />
        
         <div className='flex flex-row w-full skipContainer'>
-        <h1 className='hero-text mx-auto skipText'>Skip to see menu</h1>
+        <h1 className='hero-text mx-auto text-base skipText'>Skip to see menu</h1>
         </div>
 
     </div>
@@ -177,12 +176,12 @@ useEffect (() => {
           </div>
           <div className = "location-right">
           <iframe  style = {{   width :"100%" ,height: "100%"  , border: 0}}src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.5160618231757!2d77.18816327621589!3d28.584291286268364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3cf69b24ac3%3A0xe2bcd9f8a25819c8!2sRoyal%20China!5e0!3m2!1sen!2sin!4v1686037107876!5m2!1sen!2sin" 
- allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+  loading="lazy" ></iframe> </div>
           </div>
         </div>
     </section>
     <section className='w-full h-1/3 bg-black'/>
-    <Footer onPress={goToTop} />
+    <Footer  />
      
     </Fragment>
    
